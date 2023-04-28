@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mon beau Formulaire</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+
+    <nav class="navig">
+        
+            <a href="accueuil.html">Accueil</a> | <a href="formulaire.html">Formulaire</a>
+        
+    </nav>
+
+    
+    <div class="titre">
+        <img class="padoru" src="img/padoru.png" alt="padoru">
+        <h1>Formulaire d'inscription</h1>
+        <img class="padoru" src="img/padoru.png" alt="padoru">
+    </div>
+
+    <form>
+
+    <div>
+        <i class="fa-sharp fa-solid fa-user-tie fa-2xs"></i>
+        <label for="nom">Nom :</label>
+    </div>
+        <input type="text" name="nom" id="nom" placeholder="Ecris ton nom">
+
+    <div>
+        <i class="fa-sharp fa-solid fa-user-tie fa-2xs"></i>
+        <label for="prenom">Prénom :</label>
+    </div>
+        <input type="text" name="prénom" id="prenom" placeholder="Ecris ton prénom">
+
+
+    <div>
+        <i class="fa-solid fa-person-cane fa-2xs"></i>
+        <label for="age">Age :</label>
+    </div>
+        <input type="number" name="age" id="age" min="18" max="77">
+
+
+    <div>
+        <i class="fa-solid fa-person-cane fa-2xs"></i>
+        <label for="ddn">Date de Naissance :</label>
+    </div>
+        <input type="date" name="ddn" id="ddn" min="1997-07-24">
+        <br>
+
+        <select>
+            <option class="genre">Genre :</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="NonBinaire">Non Binaire</option>
+            <option value="None">Ne Se Prononce Pas</option>
+        </select>
+        <br>
+
+        <label for="yeux">Couleur des yeux :</label>
+        <input type="color" name="yeux" id="yeux">
+
+
+
+    <div class="email">
+        <i class="fa-solid fa-envelope fa-2xs" style="color: #000000;"></i>
+        <label for="mail">Adresse Mail:</label>
+    </div>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="machin.bidule@mail.fr">
+
+
+
+    <div>
+        <i class="fa-solid fa-house fa-2xs"></i>        
+        <label for="adresse">Adresse Postale:</label>
+    </div>
+        <input type="text" id="adresse" name="adresse" placeholder="36 rue de la Boustifaille">
+        
+    <div>
+        <i class="fa-solid fa-house fa-2xs"></i>  
+        <label for="code_postal">Code Postal:</label>
+    </div>
+        <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" placeholder="69420">
+    
+    <div>
+        <i class="fa-solid fa-house fa-2xs"></i>  
+        <label for="ville">Ville de Résidence:</label>
+    </div>
+        <input type="text" id="ville" ville="ville" placeholder="Montcuq">
+
+        <p>Métier Exercé:</p> 
+
+
+        <div>
+
+            <input type="radio" id="jobChoice1" name="job" value="job1">
+            <label for="jobChoice1">Graphiste</label>
+
+            <input type="radio" id="jobChoice3" name="job" value="job3">
+            <label for="jobChoice3">Photographe</label>  
+
+            <input type="radio" id="jobChoice4" name="job" value="job4">
+            <label for="jobChoice4">Cuisinier.e</label>
+
+            <input type="radio" id="jobChoice5" name="job" value="job5">
+            <label for="jobChoice5">Humoriste</label>
+
+        </div>
+
+        <p>Nationalité:</p>
+        <div>
+            <input type="radio" id="nationality1" name="nationalité" value="nation1" checked>
+            <label for="nationality1">Français.e</label>
+
+            <input type="radio" id="2" name="nationalité" value="nation2">
+            <label for="nationality2">Corse</label>
+
+            <input type="radio" id="nationality3" name="nationalité" value="nation3">
+            <label for="nationality3">Breton.ne</label>
+        </div>
+        <br>
+
+        <label for="secu">Numéro de Sécurité Sociale:</label>
+        <input type="number" id="secu" name="secu">
+
+
+        
+
+        <label for="num_passeport">Numéro de Passeport:</label>
+        <input type="number" id="num_passeport" num_pass="num_passeport">
+
+        <label for="deliv_pass">Date de Délivrance du Passeport:</label>
+        <input type="date" id="deliv_pass" deliv_passeport="deliv_pass">
+
+        <label for="valid_pass">Date de Validité du Passeport:</label>
+        <input type="date" id="valid_pass" valid_passeport="valid_pass">
+       
+
+
+
+
+        <p>Compétence Front-End :</p> 
+
+
+        <div>
+
+            <input type="checkbox" id="frontChoice1" name="front" value="front1">
+            <label for="frontChoice1">HTML</label>
+
+            <input type="checkbox" id="frontChoice2" name="front" value="front2">
+            <label for="frontChoice2">CSS</label>  
+
+            <input type="checkbox" id="frontChoice3" name="front" value="front3">
+            <label for="frontChoice3">JS</label>
+
+            <input type="checkbox" id="frontChoice4" name="front" value="front4">
+            <label for="frontChoice4">React</label>
+
+            <input type="checkbox" id="frontChoice5" name="front" value="front5">
+            <label for="backChoice5">Angular</label>
+
+            <input type="checkbox" id="frontChoice6" name="front" value="front6">
+            <label for="frontChoice6">Vue</label>
+
+        </div>
+
+
+
+
+
+
+
+
+        <p>Compétence Back-End :</p> 
+
+
+        <div>
+
+            <input type="checkbox" id="backChoice1" name="back" value="back1">
+            <label for="backChoice1">Java</label>
+
+            <input type="checkbox" id="backChoice3" name="back" value="back2">
+            <label for="backChoice2">PHP</label>  
+
+            <input type="checkbox" id="backChoice4" name="back" value="back3">
+            <label for="backChoice3">Laravel</label>
+
+            <input type="checkbox" id="backChoice5" name="back" value="back4">
+            <label for="backChoice4">Symphony</label>
+
+            <input type="checkbox" id="backChoice5" name="back" value="back5">
+            <label for="backChoice5">NodeJS</label>
+
+            <input type="checkbox" id="backChoice6" name="back" value="back6">
+            <label for="backChoice6">Ruby</label>
+
+        </div>
+
+
+<br>
+
+
+
+        <div class="impute">
+        <input type="file" class="imput_cv" name="cv" id="cv" accept=".pdf">
+        <label for="cv" class="for_cv">Envoyer votre CV</label>
+        </div>
+        
+        <br>
+
+
+
+        <label for="rdv">Une date pour un Rendez-Vous :</label>
+        <input type="date" id="rdv" name="rdv" min="2023-05-01" max="2023-05-31">
+
+<br>
+
+        <a class="btn" href="formulaire_2.html" method="get" target="_blank">Envoyer le tout!</a>
+
+    </form>
+
+</body>
+</html>
